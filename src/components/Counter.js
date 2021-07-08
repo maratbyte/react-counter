@@ -4,10 +4,12 @@ import Button from './Button.js'
 class Counter extends Component {
   render() {
     return (
-      <div>
+      <div className="Counter">
         <p>{this.props.count}</p>
-        <Button action={this.props.inc} text="+" />
-        <Button action={this.props.dec} text="-" />
+        <div className="Buttons">
+          <Button action={this.props.inc} text="+" />
+          <Button action={this.props.dec} text="-" />
+        </div>
       </div>
     );
   }
